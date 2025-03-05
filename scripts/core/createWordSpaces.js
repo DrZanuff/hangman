@@ -1,1 +1,1 @@
-export function createWordSpaces(t,e){const c=e.split(""),o=t.objects.LetterAnchor.getFirstInstance(),{x:r,y:s}=o;c.forEach(((e,o)=>{t.objects.Letter.createInstance(0,r+64*o,s).text=e,console.log({letters:c,letter:e})}))}
+export function createWordSpaces(t,e){const c=e.split(""),r=t.objects.LetterAnchor.getFirstInstance(),{x:s,y:n}=r;c.forEach(((e,c)=>{const r=t.objects.Letter.createInstance(0,s+64*c,n);r.instVars.character=e,r.text="_"}))}

@@ -33,11 +33,17 @@ function Key(event: KeyboardEvent, runtime: IRuntime) {
   }
 }
 
-function Tick(runtime: IRuntime) {}
+function Tick(runtime: IRuntime) {
+  const hintCounter = runtime.objects.LighBulbCounter.getFirstInstance()!
+  const hints = runtime.globalVars.Hints
+  hintCounter.width = hints * 64
+}
 
 function hideReferenceObjects(runtime: IRuntime) {
   const letterAnchors = runtime.objects.LetterAnchor.getAllInstances()
   hideAllObjects(letterAnchors)
+  const hintButtons = runtime.objects.Button.getAllInstances()
+  hideAllObjects(hintButtons)
 }
 
 function hideAllObjects(objects: IWorldInstance[]) {

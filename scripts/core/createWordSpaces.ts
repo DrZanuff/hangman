@@ -10,7 +10,7 @@ export function createWordSpaces(runtime: IRuntime, word: string) {
       x + 64 * index,
       y
     )
-    newLetter.text = letter
-    console.log({ letters, letter })
+    newLetter.instVars.character = letter
+    newLetter.text = '_'
   })
 }

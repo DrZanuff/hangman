@@ -1,0 +1,59 @@
+{
+	"name": "E_Main",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "Hints",
+			"type": "number",
+			"initialValue": "3",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 603948874084728
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 939068221339731
+				}
+			],
+			"actions": [
+				{
+					"id": "load-stylesheet",
+					"objectClass": "Browser",
+					"sid": 350111789928371,
+					"parameters": {
+						"url": "\"style.css\""
+					}
+				}
+			],
+			"sid": 338249821819528
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 835463335090722,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "Letter"
+					}
+				}
+			],
+			"actions": [
+				{
+					"type": "script",
+					"script": "highLightLetter(runtime)"
+				}
+			],
+			"sid": 921974424767158
+		}
+	],
+	"sid": 906337218849161
+}
