@@ -1,0 +1,1 @@
+const mockWords=["banana","apple","orange","grape","mellon","berry"];export function getRandomWord(){return mockWords.sort((()=>Math.random()-.5))[0]}

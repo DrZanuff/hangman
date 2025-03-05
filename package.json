@@ -1,0 +1,25 @@
+{
+  "name": "hangman",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc --project scripts/tsconfig.json && npm run minify",
+    "dev": "tsc --watch --project scripts/tsconfig.json",
+    "minify": "find scripts -name '*.js' ! -name '*.min.js' -exec terser {} -o {} --compress --mangle ';'",
+    "minify-watch": "chokidar 'scripts/**/*.js' -c 'npm run minify'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chokidar-cli": "^3.0.0",
+    "parcel": "^2.13.3",
+    "terser": "^5.39.0",
+    "typescript": "^5.8.2"
+  },
+  "dependencies": {
+    "@types/lodash": "^4.17.16",
+    "lodash": "^4.17.21"
+  }
+}

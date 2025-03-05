@@ -1,0 +1,23 @@
+{
+	"name": "Board",
+	"plugin-id": "NinePatch",
+	"sid": 837484913855008,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"image": {
+		"width": 244,
+		"height": 134,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "lossless",
+		"exportQuality": 0.8,
+		"fileType": "image/png",
+		"imageSpriteId": 8283921,
+		"useCollisionPoly": true,
+		"tag": ""
+	}
+}

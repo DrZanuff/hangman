@@ -1,0 +1,5 @@
+*.uistate.json
+ts-defs
+node_modules
+scripts/*.js
+rawAssets
